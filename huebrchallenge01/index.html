@@ -27,7 +27,7 @@ server {
         try_files $uri $uri/ =404;
     }
 
-    if ( $request ~* "^GET /+flag.html HTTP.*$" ){
+    if ( $request ~* "^GET.*flag.html.*HTTP.*$|%" ){
         return 403;
     }
 }
@@ -41,7 +41,7 @@ server {
 </ul>
 <code>
         RewriteEngine On
-        RewriteCond %{THE_REQUEST} "^GET /+flag.html HTTP.*$" [NC]
+        RewriteCond %{THE_REQUEST} "^GET.*flag.html.*HTTP.*$|%" [NC]
         RewriteRule .* - [F]
 </code>
 <h2>Contact</h2>
