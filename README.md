@@ -20,7 +20,7 @@ server {
         try_files $uri $uri/ =404;
     }
 
-    if ( $request ~* "^GET /flag.html HTTP.*$" ){
+    if ( $request ~* "^GET.*flag.html.*HTTP.*$|%" ){
         return 403;
     }
 }
@@ -35,12 +35,13 @@ The flag.html will be available at http://localhost/flag.html.
 ## Tips
 
 * No need to brute force anything.
+* It's not a http request smuggling vulnerability.
 * It's not a bug on Nginx.
 * This could be also hosted in Apache with the following mod_rewrite rules.
 
 ```
     RewriteEngine On
-    RewriteCond %{THE_REQUEST} "^GET /flag.html HTTP.*$" [NC]
+    RewriteCond %{THE_REQUEST} "^GET.*flag.html.*HTTP.*$|%" [NC]
     RewriteRule .* - [F]
 ```
 
