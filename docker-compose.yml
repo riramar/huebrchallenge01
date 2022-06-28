@@ -1,0 +1,7 @@
+version: "3.0"
+services:
+    huebrchallenge01:
+        container_name: huebrchallenge01
+        build: huebrchallenge01
+        ports:
+        - "80:80"
