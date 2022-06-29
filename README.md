@@ -51,4 +51,12 @@ If you found the solution please send me the solution through [@riramar](https:/
 
 ## Solvers
 
-No one yet.
+### Expected Solutions
+
+* [Fepame](https://twitter.com/Highustavo)
+* [Lucas Botelho](https://twitter.com/LuskaBol)
+
+### Valid Solutions
+
+* [Arthur Aires](https://twitter.com/arthurair_es)
+* [Caio Lüders](https://twitter.com/caioluders)
