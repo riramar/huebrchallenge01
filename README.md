@@ -4,7 +4,7 @@
 
 This is my first web challenge called **HueBR Challenge 01**. Can you get the flag.html?
 
-The flag.html is hosted by the latest Nginx version hosts with the following configuration.
+The flag.html is hosted by the latest Nginx version with the following configuration.
 
 ```
 server {
