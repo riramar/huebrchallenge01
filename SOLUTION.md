@@ -1,7 +1,7 @@
 # HueBR Challenge 01 Solution
 
 ```
-$ printf 'GET /flag.html\r\n\r\n' | nc huebrchallenge01.pqp.mx 80
+$ printf 'GET /flag.html\r\n\r\n' | nc www.example.com 80
 Congratulations!
 ```
 
